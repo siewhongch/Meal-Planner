@@ -1,0 +1,7 @@
+{
+  "name": "Mise — Weekly Meal Planner & Grocer Cart Engine",
+  "description": "Intelligent weekly meal planning and grocery cart automation that eliminates mental load, reduces food waste, and dispatches ingredients directly to GrabMart, FoodPanda, RedMart, FairPrice, and Amazon.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
