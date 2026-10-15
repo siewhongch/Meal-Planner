@@ -58,7 +58,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
               </h1>
 
               <p className="mt-4 text-base sm:text-lg text-stone-600 leading-relaxed max-w-2xl">
-                Simply pick your household preferences and weekly recipes. Mise calculates exact ingredients with standardized purchase units, verifies what’s already in your pantry to stop food waste, and automates your grocery cart with GrabMart, FoodPanda, RedMart, or FairPrice.
+                Simply pick your household preferences and weekly recipes. Happy Aprons calculates exact ingredients with standardized purchase units, verifies what’s already in your pantry to stop food waste, and automates your grocery cart with GrabMart, FoodPanda, RedMart, or FairPrice.
               </p>
             </div>
 

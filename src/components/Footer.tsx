@@ -15,7 +15,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab, onOpenCanvas }) => 
           <div className="md:col-span-2 space-y-3">
             <div className="flex items-baseline gap-2">
               <span className="font-serif text-xl font-bold tracking-tight text-stone-900">
-                Mise
+                Happy Aprons
               </span>
               <span className="text-xs uppercase tracking-wider text-amber-800 font-medium">
                 Meal & Cart Engine
@@ -92,7 +92,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab, onOpenCanvas }) => 
         </div>
 
         <div className="mt-10 pt-6 border-t border-stone-100 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 gap-2">
-          <span>&copy; {new Date().getFullYear()} Mise Technologies. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} Happy Aprons. All rights reserved.</span>
           <div className="flex items-center gap-4">
             <span>Household Meal Planning</span>
             <span aria-hidden="true">·</span>

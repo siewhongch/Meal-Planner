@@ -17,6 +17,7 @@ import { RecipeDetailModal } from './components/RecipeDetailModal';
 import { RecipeUploadModal } from './components/RecipeUploadModal';
 import { CheckoutDispatchModal } from './components/CheckoutDispatchModal';
 import { BusinessModelCanvasModal } from './components/BusinessModelCanvasModal';
+import { LiveMealDbModal } from './components/LiveMealDbModal';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -32,6 +33,7 @@ export default function App() {
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
   const [isCheckoutModalOpen, setIsCheckoutModalOpen] = useState(false);
   const [isCanvasModalOpen, setIsCanvasModalOpen] = useState(false);
+  const [isLiveMealDbOpen, setIsLiveMealDbOpen] = useState(false);
 
   // Profile update handler
   const handleUpdateProfile = (updates: Partial<UserProfile>) => {
@@ -127,6 +129,7 @@ export default function App() {
         cartItemCount={totalCartItemsCount}
         onOpenQuickCart={() => setActiveTab('cart')}
         onOpenCanvas={() => setIsCanvasModalOpen(true)}
+        onOpenLiveMealDb={() => setIsLiveMealDbOpen(true)}
       />
 
       <main className="flex-1">
@@ -149,6 +152,7 @@ export default function App() {
             onOpenRecipeDetail={setSelectedRecipeDetail}
             onOpenUploadModal={() => setIsUploadModalOpen(true)}
             onInstantOrder={handleInstantOrder}
+            onOpenLiveMealDb={() => setIsLiveMealDbOpen(true)}
             pax={profile.pax}
           />
         )}
@@ -220,6 +224,12 @@ export default function App() {
         isOpen={isCanvasModalOpen}
         onClose={() => setIsCanvasModalOpen(false)}
         onNavigateToSection={(sec) => setActiveTab(sec)}
+      />
+
+      <LiveMealDbModal
+        isOpen={isLiveMealDbOpen}
+        onClose={() => setIsLiveMealDbOpen(false)}
+        onAddRecipeToPlan={handleAddRecipeToPlan}
       />
     </div>
   );

@@ -7,6 +7,7 @@ interface HeaderProps {
   cartItemCount: number;
   onOpenQuickCart: () => void;
   onOpenCanvas: () => void;
+  onOpenLiveMealDb: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -15,6 +16,7 @@ export const Header: React.FC<HeaderProps> = ({
   cartItemCount,
   onOpenQuickCart,
   onOpenCanvas,
+  onOpenLiveMealDb,
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-[#FBFBFA]/95 backdrop-blur-md border-b border-stone-200/80 transition-all">
@@ -25,8 +27,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => onSelectTab('planner')}
             className="group flex items-baseline gap-2.5 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 rounded-sm"
           >
-            <span className="font-serif text-2xl font-bold tracking-tight text-stone-900">
-              Mise
+            <span className="font-serif text-2xl font-bold tracking-tight text-stone-900 whitespace-nowrap">
+              Happy Aprons
             </span>
             <span className="hidden sm:inline text-xs font-medium tracking-wider uppercase text-amber-800/80">
               Meal & Grocer Engine
@@ -75,6 +77,13 @@ export const Header: React.FC<HeaderProps> = ({
             }`}
           >
             Grocer Network
+          </button>
+          <button
+            onClick={onOpenLiveMealDb}
+            className="whitespace-nowrap shrink-0 text-stone-600 hover:text-stone-950 transition-colors flex items-center gap-1.5 py-1"
+          >
+            <Sparkles className="w-3.5 h-3.5 text-amber-600" />
+            <span>TheMealDB Live API</span>
           </button>
           <button
             onClick={onOpenCanvas}

@@ -32,7 +32,7 @@ export const GrocerPartnersView: React.FC<GrocerPartnersViewProps> = ({
             Integrated Grocer & Delivery Network
           </h2>
           <p className="text-sm text-stone-600 mt-1 max-w-2xl">
-            Mise connects directly to leading supermarkets and rapid delivery networks. Choose scheduled delivery for your routine weekly haul, or instant delivery when you need tonight’s ingredients in under 30 minutes.
+            Happy Aprons connects directly to leading supermarkets and rapid delivery networks. Choose scheduled delivery for your routine weekly haul, or instant delivery when you need tonight’s ingredients in under 30 minutes.
           </p>
         </div>
 

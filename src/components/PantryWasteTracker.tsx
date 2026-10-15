@@ -53,7 +53,7 @@ export const PantryWasteTracker: React.FC<PantryWasteTrackerProps> = ({
               Pantry Inventory & Waste Prevention
             </h2>
             <p className="text-sm text-stone-600 mt-1 max-w-2xl">
-              Track what is already in your kitchen before shopping. Mise automatically subtracts these items from your grocery cart, saving you money and eliminating spoiled leftovers.
+              Track what is already in your kitchen before shopping. Happy Aprons automatically subtracts these items from your grocery cart, saving you money and eliminating spoiled leftovers.
             </p>
           </div>
 

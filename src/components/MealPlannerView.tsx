@@ -9,6 +9,7 @@ interface MealPlannerViewProps {
   onOpenRecipeDetail: (recipe: Recipe) => void;
   onOpenUploadModal: () => void;
   onInstantOrder: (recipe: Recipe) => void;
+  onOpenLiveMealDb?: () => void;
   pax: number;
 }
 
@@ -19,6 +20,7 @@ export const MealPlannerView: React.FC<MealPlannerViewProps> = ({
   onOpenRecipeDetail,
   onOpenUploadModal,
   onInstantOrder,
+  onOpenLiveMealDb,
   pax,
 }) => {
   const [selectedDayFilter, setSelectedDayFilter] = useState<'all' | DayOfWeek>('all');
@@ -75,7 +77,17 @@ export const MealPlannerView: React.FC<MealPlannerViewProps> = ({
               </div>
             </div>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              {onOpenLiveMealDb && (
+                <button
+                  type="button"
+                  onClick={onOpenLiveMealDb}
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-amber-900 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg transition-colors"
+                >
+                  <Flame className="w-3.5 h-3.5 text-amber-700" />
+                  <span>TheMealDB Live API</span>
+                </button>
+              )}
               <button
                 type="button"
                 onClick={onOpenUploadModal}
